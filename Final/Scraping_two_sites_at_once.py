@@ -2,7 +2,7 @@ import time
 from selenium import webdriver
 from threading import Thread
 
-import Final.Amount_Of_Data as Amount_Of_Data
+from Scraper import scraper
 
 
 # URLs to scrape
@@ -10,8 +10,8 @@ first_url = "https://www.example.com"
 second_url = "https://www.another-example.com"
 
 # Create threads for simultaneous scraping
-thread1 = Thread(target=scrape, args=(first_url,))
-thread2 = Thread(target=scrape, args=(second_url,))
+thread1 = Thread(target=scraper(first_url), args=(first_url,))
+thread2 = Thread(target=scraper(second_url), args=(second_url,))
 
 # Start both threads
 thread1.start()
