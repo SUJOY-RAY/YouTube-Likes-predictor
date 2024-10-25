@@ -212,8 +212,9 @@ import re
 from Amount_Of_Data import namesAndCount
 from ScrollToLoadAllVideos import scroller
 from ViewCount import convert_views, convert_date
+import numpy as np
 
-def scraper(channel_url):
+def scraper(channel_url,j):
     # Get the video names and the number of videos
     video_names, n = namesAndCount(channel_url)
 
@@ -255,9 +256,9 @@ def scraper(channel_url):
                 products = re.search(r'(\d+)\s+products', meta_text_str)
 
                 # Clean up extracted data
-                cleaned_views = convert_views(views.group(1).replace(",", "")) if views else "N/A"
-                cleaned_date = convert_date(date.group(1)) if date else "N/A"
-                cleaned_products = products.group(1) if products else "N/A"
+                cleaned_views = convert_views(views.group(1).replace(",", "")) if views else np.nan
+                cleaned_date = convert_date(date.group(1)) if date else np.nan
+                cleaned_products = products.group(1) if products else np.nan
 
                 # Store the extracted data in the dictionary
                 video_data = {
@@ -269,7 +270,7 @@ def scraper(channel_url):
                 metadata['videos'].append(video_data)
 
                 print(f"Video {i}: {video_data}")  # Output the metadata for this video
-                with open('checker.json', 'w') as json_file:
+                with open(f'checker{j}.json', 'w') as json_file:
                     json.dump(metadata, json_file, indent=4)
 
                 # Navigate back to the video list
@@ -288,10 +289,10 @@ def scraper(channel_url):
         right += 20
 
     # Write all metadata to the JSON file at once
-    with open('metadata.json', 'w') as json_file:
+    with open(f'metadata{j}.json', 'w') as json_file:
         json.dump(metadata, json_file, indent=4)
 
     driver.quit()  # Close the WebDriver
     return metadata
 
-scraper("https://www.youtube.com/@kurzgesagt/videos")
+scraper("https://www.youtube.com/@kurzgesagt/videos",1)

@@ -2,9 +2,9 @@
     "videos": [
         {
             "video title": "Humanity's Greatest Journey",
-            "views": NaN,
-            "days ago": NaN,
-            "products": NaN
+            "views": 533000,
+            "days ago": 9,
+            "products": "20"
         },
         {
             "video title": "Tired of Doomscrolling?",
@@ -118,6 +118,18 @@
             "video title": "What Happens AFTER Nuclear War?",
             "views": 9000000,
             "days ago": 240,
+            "products": NaN
+        },
+        {
+            "video title": "Did The Future Already Happen? - The Paradox of Time",
+            "views": 10000000,
+            "days ago": 240,
+            "products": "16"
+        },
+        {
+            "video title": "You Are The Center of The Universe (Literally)",
+            "views": 6000000,
+            "days ago": 300,
             "products": NaN
         }
     ]
