@@ -1,136 +1,39 @@
 {
     "videos": [
         {
-            "video title": "Humanity's Greatest Journey",
-            "views": 533000,
-            "days ago": 9,
-            "products": "20"
+            "video title": "The Real Reason Why You Have Allergies",
+            "views": 8000000,
+            "days ago": 30,
+            "products": "13",
+            "duration": "15:13"
         },
         {
-            "video title": "Tired of Doomscrolling?",
+            "video title": "Is The World Getting More Violent?",
+            "views": 8000000,
+            "days ago": 30,
+            "products": "11",
+            "duration": "12:37"
+        },
+        {
+            "video title": "Let's Talk About The Last 10 Months",
             "views": 3000000,
-            "days ago": 14,
-            "products": "18"
-        },
-        {
-            "video title": "There Is Something Hiding Inside Earth",
-            "views": 9000000,
-            "days ago": 21,
-            "products": NaN
-        },
-        {
-            "video title": "This Video Might Save 58 Lives Next Week",
-            "views": 5000000,
             "days ago": 30,
-            "products": NaN
+            "products": "9",
+            "duration": "3:24"
         },
         {
-            "video title": "Why Scientists Are Puzzled By This Virus",
-            "views": 4000000,
-            "days ago": 30,
-            "products": NaN
-        },
-        {
-            "video title": "We Need to Rethink Exercise (Updated Version)",
-            "views": 1000000,
-            "days ago": 30,
-            "products": "2"
-        },
-        {
-            "video title": "We Traveled Back in Time. Now Physicists Are Angry.",
-            "views": 8000000,
-            "days ago": 30,
-            "products": "6"
-        },
-        {
-            "video title": "Fever Feels Horrible, but is Actually Awesome!",
+            "video title": "Black Hole's Evil Twin - Gravastars Explained",
             "views": 2000000,
-            "days ago": 60,
-            "products": "8"
+            "days ago": 30,
+            "products": "9",
+            "duration": "0:06"
         },
         {
-            "video title": "A.I. \u2010 Humanity's Final Invention?",
-            "views": 8000000,
-            "days ago": 60,
-            "products": "10"
-        },
-        {
-            "video title": "This Disease is Deadlier Than The Plague",
-            "views": 8000000,
-            "days ago": 90,
-            "products": NaN
-        },
-        {
-            "video title": "Do You Have a Free Will?",
-            "views": 5000000,
-            "days ago": 120,
-            "products": NaN
-        },
-        {
-            "video title": "We Are Making a VIDEO GAME",
+            "video title": "Vaping Is Too Good To Be True",
             "views": 6000000,
-            "days ago": 120,
-            "products": NaN
-        },
-        {
-            "video title": "Your Hidden Superpower",
-            "views": 1000000,
-            "days ago": 120,
-            "products": "2"
-        },
-        {
-            "video title": "This Black Hole Could be Bigger Than The Universe",
-            "views": 7000000,
-            "days ago": 150,
-            "products": "2"
-        },
-        {
-            "video title": "Smoking is Awesome",
-            "views": 11000000,
-            "days ago": 150,
-            "products": NaN
-        },
-        {
-            "video title": "What Makes Kurzgesagt So Special?",
-            "views": 1000000,
-            "days ago": 150,
-            "products": NaN
-        },
-        {
-            "video title": "There Are Thousands of Alien Empires in The Milky Way",
-            "views": 4000000,
-            "days ago": 180,
-            "products": NaN
-        },
-        {
-            "video title": "How The Dinosaurs Actually Died",
-            "views": 5000000,
-            "days ago": 180,
-            "products": NaN
-        },
-        {
-            "video title": "The Paradox of an Infinite Universe",
-            "views": 1000000,
-            "days ago": 210,
-            "products": NaN
-        },
-        {
-            "video title": "What Happens AFTER Nuclear War?",
-            "views": 9000000,
-            "days ago": 240,
-            "products": NaN
-        },
-        {
-            "video title": "Did The Future Already Happen? - The Paradox of Time",
-            "views": 10000000,
-            "days ago": 240,
-            "products": "16"
-        },
-        {
-            "video title": "You Are The Center of The Universe (Literally)",
-            "views": 6000000,
-            "days ago": 300,
-            "products": NaN
+            "days ago": 60,
+            "products": "7",
+            "duration": "13:55"
         }
     ]
 }
