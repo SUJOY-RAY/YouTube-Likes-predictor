@@ -9,6 +9,7 @@ def convert_views(views_str):
         return int(float(views_str.replace('B', '').replace(',', '')) * 1000000000)
     else:
         return int(views_str.replace(',', ''))
+    
 def convert_date(date_str):
     if 'hours' in date_str:
         return 1

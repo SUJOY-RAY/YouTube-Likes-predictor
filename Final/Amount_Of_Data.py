@@ -1,16 +1,13 @@
 # Define a function for scraping a given URL
 import webbrowser
 from selenium import webdriver
-import time
+from selenium.webdriver.common.by import By
 
+import time
+from DriverOpen import driverOpenFunc
 def namesAndCount(url):
-    import json
-    import time
-    from selenium import webdriver
-    from selenium.webdriver.common.by import By
-    driver = webdriver.Chrome()
-    channel_url = "https://www.youtube.com/@kurzgesagt/videos"
-    driver.get(channel_url)
+    driver=driverOpenFunc()
+    driver.get(url)
 
     time.sleep(5)
 
@@ -32,4 +29,4 @@ def namesAndCount(url):
     return video_names,len(video_names)
 
 
-a,b=namesAndCount("https://www.youtube.com/@kurzgesagt/videos")
+# a,b=namesAndCount("https://www.youtube.com/@kurzgesagt/videos")
