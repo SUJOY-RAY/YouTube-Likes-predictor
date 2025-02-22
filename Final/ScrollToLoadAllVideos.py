@@ -1,5 +1,8 @@
 import time
-def scroller(driver, scroll_pause_time=2):
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.by import By
+
+def scroller(driver, scroll_pause_time=0.3):
     """
     Scrolls down the YouTube page to load more videos.
     
@@ -21,3 +24,12 @@ def scroller(driver, scroll_pause_time=2):
         if new_height == last_height:
             break  # Exit the loop if no more new content is loaded
         last_height = new_height
+        
+# from selenium.webdriver.common.keys import Keys
+# def scroller(driver, scroll_pause_time=0.3):
+
+#     body = driver.find_element(By.TAG_NAME, "body")
+
+#     for _ in range(80):  # Scroll 50 times
+#         body.send_keys(Keys.PAGE_DOWN)
+#         time.sleep(1)
