@@ -12,4 +12,4 @@ wait_time = st.number_input("Enter Delay Duration in seconds", 1)
 if st.button("Press To start"):
     st.html(f"<p>{name} videos metadata<p>")
     scraper(url, name = name, continuous=True, interval=wait_time)
-    uploaded_file = st.file_uploader(f"{name}.json", type=["json"])
+    
