@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Video Statistics</title>
+    <!-- Include Plotly.js -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <h1 style="text-align: center;">YouTube Video Statistics</h1>
+    <!-- Div where the chart will be rendered -->
+    <div id="chart" style="width: 80%; margin: auto;"></div>
+
+    <!-- JavaScript to render the chart -->
+    <script type="text/javascript">
+        // Pass the graphJSON data from Flask
+        var graphs = {{ graphJSON | safe }};
+        // Render the chart
+        Plotly.newPlot('chart', graphs.data, graphs.layout);
+    </script>
+</body>
+</html>

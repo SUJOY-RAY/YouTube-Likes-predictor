@@ -181,6 +181,7 @@ from Amount_Of_Data import namesAndCount
 from ScrollToLoadAllVideos import scroller
 from timeConvert import date_convert
 from DriverOpen import driverOpenFunc
+from likesCount import convert_likes
 
 def scraper(channel_url, name, continuous=True, interval=3600, max_retries=3):
     """
@@ -288,7 +289,7 @@ def scraper(channel_url, name, continuous=True, interval=3600, max_retries=3):
                             "views": cleaned_views,
                             "days ago": cleaned_date,
                             "products": cleaned_products,
-                            "likes": like_count
+                            "likes": convert_likes(like_count)
                         }
                         metadata['videos'].append(video_data)
                         existing_titles.add(video_names[i])

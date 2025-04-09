@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Views vs Time{% endblock %}
+
+{% block content %}
+    <h1>Views vs Time</h1>
+    <div id="plot"></div>
+    
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script>
+        var data = {{ graph_json | safe }};
+        var layout = {{ layout_json | safe }};
+        Plotly.newPlot('plot', data, layout);
+    </script>
+{% endblock %}
