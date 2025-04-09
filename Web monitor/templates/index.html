@@ -3,21 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YouTube Video Statistics</title>
-    <!-- Include Plotly.js -->
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <title>Plotly Chart</title>
+    <script src="https://cdn.plot.ly/plotly-3.0.1.min.js" charset="utf-8"></script>
 </head>
 <body>
-    <h1 style="text-align: center;">YouTube Video Statistics</h1>
-    <!-- Div where the chart will be rendered -->
-    <div id="chart" style="width: 80%; margin: auto;"></div>
+    <div id="chart1" style="width: 80%; margin: auto;"></div>
+    <script>Plotly.newPlot('chart1', {{ graphJSON1 | safe }}.data, {{ graphJSON1 | safe }}.layout);</script>
 
-    <!-- JavaScript to render the chart -->
-    <script type="text/javascript">
-        // Pass the graphJSON data from Flask
-        var graphs = {{ graphJSON | safe }};
-        // Render the chart
-        Plotly.newPlot('chart', graphs.data, graphs.layout);
-    </script>
+    <div id="chart2" style="width: 80%; margin: auto;"></div>
+    <script>Plotly.newPlot('chart2', {{ graphJSON2 | safe }}.data, {{ graphJSON2 | safe }}.layout);</script>
+
+    <div id="chart3" style="width: 80%; margin: auto;"></div>
+    <script>Plotly.newPlot('chart3', {{ graphJSON3 | safe }}.data, {{ graphJSON3 | safe }}.layout);</script>
+
+    <div id="chart4" style="width: 80%; margin: auto;"></div>
+    <script>Plotly.newPlot('chart4', {{ graphJSON4 | safe }}.data, {{ graphJSON4 | safe }}.layout);</script>
+
+    <div id="chart5" style="width: 80%; margin: auto;"></div>
+    <script>Plotly.newPlot('chart5', {{ graphJSON5 | safe }}.data, {{ graphJSON5 | safe }}.layout);</script>
+
 </body>
 </html>
